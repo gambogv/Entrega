@@ -31,7 +31,7 @@
                 Enable = previousLinkEnable
             });
 
-        for (int i = 1; i <= TotalPages; i++)
+        for (int i = -1; i <= TotalPages; i++)
         {
             if (i >= CurrentPage - Radio && i <= CurrentPage + Radio)
             {
@@ -44,13 +44,20 @@
             }
         }
 
+
+
         var linkNextEnable = CurrentPage != TotalPages;
         var linkNextPage = CurrentPage  + 1;
 
+
         if (CurrentPage == TotalPages)
+
         {
-            CurrentPage = 0;
+            linkNextPage = CurrentPage = 0;
         }
+
+       
+
         Links.Add(new PageModel
             {
                 Text = "Siguiente",
