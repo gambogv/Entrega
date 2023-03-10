@@ -99,6 +99,13 @@ namespace Sales.API.Data
                 _context.Categories.Add(new Category { Name = "Escolar" });
                 _context.Categories.Add(new Category { Name = "Zapatos" });
                 _context.Categories.Add(new Category { Name = "Carpinteria" });
+                _context.Categories.Add(new Category { Name = "Neveras" });
+                _context.Categories.Add(new Category { Name = "labadoras" });
+                _context.Categories.Add(new Category { Name = "Piscinas" });
+                _context.Categories.Add(new Category { Name = "Sexuales" });
+                _context.Categories.Add(new Category { Name = "Marqueteria" });
+                _context.Categories.Add(new Category { Name = "Ropa interior M" });
+               
 
                 await _context.SaveChangesAsync();
             }
